@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <div class="calculator">
   <div class="screen">
     <input type="text" id="result" value="0">
