@@ -1,86 +1,64 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
 
 <head>
 
-    <meta charset="UTF-8">
+  <title>Calculator</title>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="./style.css">
-
-    <title>Calculator</title>
-
-    <div class="background"> 
+  <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body> 
+<body>
 
-    <h1>calculator</h1>
+  <div class="calculator">
 
-    <div class="container">
+    <input type="text" id="result" readonly>
 
-        <form action="">
+    <div class="buttons">
 
-            <input type="text" id="screen">
+      <button onclick="clearResult()">AC</button>
 
-            <br>
+      <button onclick="appendToResult('%')">%</button>
 
-            <input class="button allclear" type="button" value="AC" onclick="clearscreen()";>
+      <button onclick="appendToResult('/')">/</button>
 
-            <input class="button operator" type="button" value="%" onclick="buttonclick(value)";>
+      <button onclick="appendToResult('7')">7</button>
 
-            <input class="button operator" type="button" value="**2" onclick="buttonclick(value)" ;>
+      <button onclick="appendToResult('8')">8</button>
 
-            <input class="button operator" type="button" value="/" onclick="buttonclick(value)";>
+      <button onclick="appendToResult('9')">9</button>
 
-            <br>
+      <button onclick="appendToResult('*')">*</button>
 
-            <input class="button number" type="button" value="1" onclick="buttonclick(value)";>
+      <button onclick="appendToResult('4')">4</button>
 
-            <input class="button number" type="button" value="2" onclick="buttonclick(value)";>
+      <button onclick="appendToResult('5')">5</button>
 
-            <input class="button number" type="button" value="3" onclick="buttonclick(value)";>
+      <button onclick="appendToResult('6')">6</button>
 
-            <input class="button operator" type="button" value="-" onclick="buttonclick(value)";>
+      <button onclick="appendToResult('-')">-</button>
 
-            <br>
+      <button onclick="appendToResult('1')">1</button>
 
-            <input class="button number" type="button" value="4" onclick="buttonclick(value)";>
+      <button onclick="appendToResult('2')">2</button>
 
-            <input class="button number" type="button" value="5" onclick="buttonclick(value)";>
+      <button onclick="appendToResult('3')">3</button>
 
-            <input class="button number" type="button" value="6" onclick="buttonclick(value)";>
+      <button onclick="appendToResult('+')">+</button>
 
-            <input class="button operator" type="button" value="+" onclick="buttonclick(value)";>
+      <button onclick="appendToResult('0')">0</button>
 
-            <br>
+      <button onclick="appendToResult('.')">.</button>
 
-            <input class="button number" type="button" value="7" onclick="buttonclick(value)";>
-
-            <input class="button number" type="button" value="8" onclick="buttonclick(value)";>
-
-            <input class="button number" type="button" value="9" onclick="buttonclick(value)";>
-
-            <input class="button operator" type="button" value="*" onclick="buttonclick(value)";>
-
-            <br>
-
-            <input class="button number" type="button" value="0" onclick="buttonclick(value)";>
-
-            <input class="button operator" type="button" value="." onclick="buttonclick(value)";>
-
-            <input class="result" type="button" value="=" onclick="findresult()";>
-
-        </form>
+      <button onclick="calculate()">=</button>
 
     </div>
 
-    <script src="./script.js"></script>
+  </div>
+
+  <script src="script.js"></script>
 
 </body>
 
