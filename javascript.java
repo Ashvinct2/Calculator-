@@ -1,21 +1,31 @@
-var screen = document.getElementById('screen');
+let result = document.getElementById('result');
 
-function buttonclick(value){
+function appendToResult(value) {
 
-    screen.value +=value;
-
-}
-
-function  clearscreen(){
-
-    screen.value = "";
+  result.value += value;
 
 }
 
-function findresult(){
+function clearResult() {
 
-    var result = eval(screen.value)
+  result.value = '';
 
-    screen.value = result;
+}
+
+function calculate() {
+
+  try {
+
+    const expression = result.value;
+
+    const resultValue = eval(expression);
+
+    result.value = resultValue;
+
+  } catch (error) {
+
+    result.value = 'Error';
+
+  }
 
 }
