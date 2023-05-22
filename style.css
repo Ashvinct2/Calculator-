@@ -1,49 +1,103 @@
-.calculator {
+h1{
 
-  max-width: 300px;
+    text-align: center;
 
-  margin: 0 auto;
+    font-family: 'Times New Roman', Times, serif;
 
-  text-align: center;
+    color: #fdeeee;
 
-  padding: 20px;
-
-  background-color: #f1f1f1;
+    font-size: 3rem;
 
 }
 
-input[type="text"] {
+.container{
 
-  width: 100%;
+    width: 470px;
 
-  height: 40px;
+    height: 100px;
 
-  margin-bottom: 10px;
+    background-color: rgb(238, 255, 162);
 
-  font-size: 18px;
+    margin: auto;
 
-  text-align: right;
+    padding: 15px;
 
-  padding: 5px;
-
-}
-
-.buttons {
-
-  display: grid;
-
-  grid-template-columns: repeat(4, 1fr);
-
-  grid-gap: 5px;
+    border-radius: 15px;
 
 }
 
-button {
+#screen{
 
-  width: 100%;
+    background-color: rgb(255, 255, 255);
 
-  height: 40px;
+    height: 90px;
 
-  font-size: 18px;
+    width: 450px;
+
+    margin: 5px;
+
+    font-size: 4rem;
+
+    text-align: right;
+
+    border-radius: 16px;
 
 }
+
+.button{
+
+    background-color: rgb(251, 255, 173);
+
+    text-decoration-color: rgb(147, 60, 60);
+
+    width: 70px;
+
+    height: 70px;
+
+    font-size: 30pt;
+
+    margin: 20px;
+
+    border-radius: 50px;
+
+    border-color: rgb(255, 255, 255);
+
+}
+
+form input.result{
+
+    background-color: rgb(143, 255, 137);
+
+    text-decoration-color: rgb(255, 255, 255);
+
+    width: 160px;
+
+    height: 40px;
+
+    font-size: 25pt;
+
+    margin: 30px;
+
+    border-radius: 50px;
+
+    border-color: rgb(178, 218, 68);
+
+}
+
+.background
+
+  {
+
+      width:  900px;
+
+      height: 900px;
+
+      background-image:url(wooden-plank-textured-background-material_53876-31378.jpg);
+
+      background-repeat: no-repeat;
+
+      background-size:cover;
+
+      background-position: center;
+
+  }
